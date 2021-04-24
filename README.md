@@ -6,4 +6,6 @@ The two files located in the folder "PythonModules" should be copied in the "zat
  - PythonModules/DataStructureSDP.py is the data structure translated in PyAsn1 convention 
  - PythonModules/LcnDecodeur.py is the Python module that decode the BER/DER encoded file
 
-## ZatoAsnDecoder.py
+## DecoderZatoService
+The actual Zato service that decode the BER/DER encoded file is DecoderZatoService/ZatoAsnDecoder.py . This file should be deployed like any Zato service. 
+The service requires two request inputs: 'file' which is the BER/DER encoded file name with its absolute path and 'nom_decodeur' which is any generic name. 
